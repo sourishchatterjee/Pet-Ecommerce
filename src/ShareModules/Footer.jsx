@@ -16,33 +16,33 @@ function Footer() {
               Subscribe to our newsletter to get updates about our grand offers.
             </p>
             <div className="social-icons">
-              <a href="#" className="social-icon"><i className="fab fa-facebook-f"></i></a>
-              <a href="#" className="social-icon"><i className="fab fa-twitter"></i></a>
-              <a href="#" className="social-icon"><i className="fab fa-pinterest"></i></a>
-              <a href="#" className="social-icon"><i className="fab fa-instagram"></i></a>
-              <a href="#" className="social-icon"><i className="fab fa-youtube"></i></a>
+              <a href="https://www.youtube.com/" className="social-icon"><i className="fab fa-facebook-f"></i></a>
+              <a href="https://www.youtube.com/" className="social-icon"><i className="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com/" className="social-icon"><i className="fab fa-pinterest"></i></a>
+              <a href="https://www.youtube.com/" className="social-icon"><i className="fab fa-instagram"></i></a>
+              <a href="https://www.youtube.com/" className="social-icon"><i className="fab fa-youtube"></i></a>
             </div>
           </div>
 
           <div className="footer-column">
             <h5 className="footer-title">Quick Links</h5>
             <ul className="footer-list">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Offer</a></li>
-              <li><a href="#">Services</a></li>
-              <li><a href="#">Contact Us</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About us</a></li>
+              <li><a href="/">Offer</a></li>
+              <li><a href="/about">Services</a></li>
+              <li><a href="https://www.youtube.com/">Contact Us</a></li>
             </ul>
           </div>
 
           <div className="footer-column">
             <h5 className="footer-title">Help Center</h5>
             <ul className="footer-list">
-              <li><a href="#">FAQs</a></li>
-              <li><a href="#">Payment</a></li>
-              <li><a href="#">Returns & Refunds</a></li>
-              <li><a href="#">Checkout</a></li>
-              <li><a href="#">Delivery Information</a></li>
+              <li><a href="https://www.youtube.com/">FAQs</a></li>
+              <li><a href="https://www.youtube.com/">Payment</a></li>
+              <li><a href="https://www.youtube.com/">Returns & Refunds</a></li>
+              <li><a href="https://www.youtube.com/">Checkout</a></li>
+              <li><a href="https://www.youtube.com/">Delivery Information</a></li>
             </ul>
           </div>
 
