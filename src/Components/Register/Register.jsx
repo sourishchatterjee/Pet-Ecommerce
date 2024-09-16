@@ -597,7 +597,7 @@ import {
   Container,
   Box,
   InputLabel,
-  Avatar,
+  
 } from '@mui/material';
 
 function Register() {

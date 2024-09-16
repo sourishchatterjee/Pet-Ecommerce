@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, CardContent, CardMedia, Typography, Button, Grid } from '@mui/material';
+import { Card, CardContent, CardMedia, Typography, Button } from '@mui/material';
 
 const BlogCard = ({ image, title, date, description }) => {
   return (

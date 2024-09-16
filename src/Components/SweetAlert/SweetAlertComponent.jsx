@@ -17,7 +17,7 @@
 
 // export default SweetAlertComponent;
 
-import React, { useEffect } from 'react';
+import  { useEffect } from 'react';
 import Swal from 'sweetalert2';
 
 const SweetAlertComponent = ({ confirm, cancel, title, subtitle }) => {

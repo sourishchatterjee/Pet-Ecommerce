@@ -173,10 +173,10 @@ function Home() {
 
 //new product
 
-const[products,setProducts]=useState(data1.productItems)
+const[products]=useState(data1.productItems)
 
-const[products2,setProducts2]=useState(producturl.productItems)
-const[products3,setProducts3]=useState(datatwo.productItems)
+const[products2]=useState(producturl.productItems)
+const[products3]=useState(datatwo.productItems)
 
   const settings = {
     dots: false,
@@ -222,7 +222,7 @@ const[products3,setProducts3]=useState(datatwo.productItems)
   };
 
   const fullText = 'Popular Brands for your pets';
-  const [index, setIndex] = useState(0);
+  const [, setIndex] = useState(0);
 
   useEffect(() => {
     const timer = setInterval(() => {

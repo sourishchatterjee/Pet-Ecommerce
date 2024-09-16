@@ -63,7 +63,7 @@
 import React, { useContext } from 'react';
 import './cartProduct.css'; // Import the CSS file
 import { CartContext } from '../Features/ContextProvider'; 
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer,  } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function CartProduct({ product }) {
@@ -75,7 +75,7 @@ function CartProduct({ product }) {
     //notify(); // Call notify after dispatch
   };
 
-  const notify = () => toast("Quantity increased!");
+  //const notify = () => toast("Quantity increased!");
 
   const Decrease = (id) => {
     dispatch({ type: "Decrease", id });
