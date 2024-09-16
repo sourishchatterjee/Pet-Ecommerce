@@ -1,0 +1,133 @@
+
+/* Mini Card Styles */
+.mini-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  width: 100%; /* Full width on smaller screens */
+  max-width: 250px; /* Max width for larger screens */
+  margin: 20px auto; /* Center the card with margin auto */
+  position: relative; /* Ensure the card is positioned relative for stacking context */
+}
+
+.mini-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.mini-card-image {
+  width: 90%;
+  height: 270px; /* Fixed height for consistent image size */
+  object-fit: cover; 
+  border-bottom: 1px solid #ddd;
+  position: relative; /* Ensure the image is positioned relative for stacking context */
+  z-index: 1; /* Ensure images are behind toast notifications */
+}
+
+.mini-card-content {
+  padding: 15px;
+  text-align: center;
+  position: relative; /* Ensure content is positioned relative for stacking context */
+  z-index: 2; /* Ensure content is above images */
+}
+
+.mini-card-title {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.mini-card-price {
+  font-size: 1rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.mini-card-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.mini-card-button:hover {
+  background-color: #218838;
+}
+
+/* Responsive Adjustments for Mini Card */
+@media (max-width: 768px) {
+  .mini-card {
+      max-width: 100%; /* Full width on small screens */
+      margin: 10px 0; /* Reduced margin for small screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .mini-card-title {
+      font-size: 1rem; /* Smaller font size on extra small screens */
+  }
+
+  .mini-card-price {
+      font-size: 0.9rem; /* Smaller font size on extra small screens */
+  }
+
+  .mini-card-button {
+      padding: 8px 16px; /* Adjusted padding */
+      font-size: 0.9rem; /* Smaller font size on extra small screens */
+  }
+}
+
+/* Toast Notification Styles */
+.toast-success-container {
+  background-color: #4CAF50;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  min-width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixed positioning for toast notifications */
+  top: 20px; /* Position from the top */
+  right: 20px; /* Position from the right */
+  z-index: 9999; /* Ensure toast is above all other content */
+}
+
+.toast-success-body {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+
+.toast-success-body::before {
+  content: "✔";
+  margin-right: 8px;
+  font-size: 16px;
+}
+
+/* Responsive Adjustments for Toast Notifications */
+@media (max-width: 768px) {
+  .toast-success-container {
+      min-width: 150px; /* Adjust width on smaller screens */
+      font-size: 12px; /* Smaller font size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .toast-success-container {
+      min-width: 100px; 
+      font-size: 10px; /* Even smaller font size */
+      padding: 6px 12px; /* Adjust padding */
+  }
+
+  .toast-success-body::before {
+      font-size: 14px; 
+  }
+}

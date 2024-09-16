@@ -1,0 +1,15 @@
+/* Ensure this CSS is applied to your project */
+.drawer-container {
+  display: flex; /* Use flexbox for layout */
+  justify-content: flex-end; /* Align content to the right */
+  padding: 30px; /* Add padding if needed */
+  width: 100%; /* Ensure the container takes full width */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.icon-button {
+  background: none; /* Remove default background */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Pointer cursor for better UX */
+  padding: 8px; /* Adjust padding around the button */
+}

@@ -1,0 +1,34 @@
+.heading {
+    margin-top: 50px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .typing-animation {
+    font-size: 2.5rem;
+    color: #d1e67b;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid rgba(150, 199, 231, 0.75); /* Blinking cursor */
+    animation: blink 0.75s step-end infinite;
+  }
+  
+  /* Cursor blink effect */
+  @keyframes blink {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: rgba(75, 156, 211, 0.75);
+    }
+  }
+  
+  .blog-container {
+    padding-bottom: 50px; /* Adjust the padding value as needed */
+  }
+  

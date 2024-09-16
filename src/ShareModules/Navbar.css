@@ -1,0 +1,58 @@
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-grow: 2;
+  }
+  
+  .nav-button {
+    margin: 0 8px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 599px) {
+    .box-container {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 899px) {
+    .box-container {
+      justify-content: flex-start;
+    }
+  
+    .nav-button {
+      margin: 0 4px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    .box-container {
+      justify-content: center;
+    }
+  
+    .nav-button {
+      margin: 0 8px;
+    }
+  }
+  
+  /* Approach 1: Flexbox */
+.parent-container {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right */
+  align-items: center; /* Center items vertically if needed */
+  height: 50px; /* Set a height if necessary */
+}
+
+
+
+/* Approach 2: Absolute Positioning */
+.parent-container {
+  position: relative;
+  height: 50px; /* Set a height if necessary */
+}
+
+.close-icon-button {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  left: 100px; /* Adjust as needed */
+}

@@ -1,0 +1,87 @@
+/* Container for the product creation form */
+.productt {
+  display: flex;
+  justify-content: flex-end; /* Align the form to the right */
+  align-items: flex-end; /* Align the form to the bottom */
+  height: 90vh;
+  background: url('../../../public/image9.png') no-repeat center center/cover; /* Background image */
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Style for the form */
+.formm {
+  background: rgba(255, 255, 255, 0.8); /* White background with transparency */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px; /* Max width for the form */
+  width: 100%;
+}
+
+/* Animation container */
+.anim {
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+.h1 h3 {
+  margin: 0;
+  color: #007bff; /* Blue color for the heading */
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style for input fields */
+.MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+/* Style for error messages */
+.MuiFormHelperText-root {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 5px;
+}
+
+/* Style for the file upload button */
+input[type="file"] {
+  display: none; /* Hide the default file input */
+}
+
+label[htmlFor="image-upload"] {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.MuiButton-outlined {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #007bff; /* Blue border for the button */
+  color: #007bff; /* Blue text color */
+  text-transform: none; /* Preserve original text case */
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.MuiButton-outlined:hover {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+/* Style for the submit button */
+.MuiButton-contained {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff; /* Blue background for the button */
+  color: white;
+  border-radius: 4px;
+  text-transform: none; /* Preserve original text case */
+  font-size: 1rem;
+}
+
+.MuiButton-contained:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}

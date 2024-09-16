@@ -1,0 +1,196 @@
+/* .testimonial-container {
+    background-color: #cdc8c8;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 20px auto;
+  }
+  
+  .title h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .title p {
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .slider-container blockquote {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .slider-container .quote {
+    width: 30px;
+    opacity: 0.3;
+  }
+  
+  .review-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+  }
+  
+  .content {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .content .text {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  
+  .star {
+    font-size: 24px;
+    color: #FFD700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .user {
+    font-weight: bold;
+    color: #333;
+  }
+   */
+
+
+
+   .testimonial-container {
+    background-color: #f9f9f9;
+    padding: 20px 20px;  /* Reduced the padding */
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 25px auto; /* Reduced the margin to lower the overall height */
+  }
+  
+  .title h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .title p {
+    color: #777;
+    margin-bottom: 20px; /* Reduced margin to further decrease height */
+  }
+  
+  .slider-container {
+    position: relative;
+  }
+  
+  .slider-container blockquote {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .slider-container .quote {
+    width: 30px;
+    opacity: 0.3;
+  }
+  
+  .review-img {
+    width: 95px;  /* Decreased the image size */
+    height: 95px; /* Decreased the image size */
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    object-fit: cover;
+  }
+  
+  .content {
+    background: #ffffff;
+    padding: 15px;  /* Reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(236, 234, 234, 0.1);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .content .text {
+    font-size: 0.9em;  /* Reduced font size */
+    color: #5f5e5e;
+    margin-bottom: 10px;
+  }
+  
+  .info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+  
+  .star {
+    font-size: 25px;  /* Reduced star size */
+    color: #FFD700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+  }
+  
+  .user {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .splide__arrow {
+    top: 25%; /* Move the arrows upwards */
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Add background for better visibility */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+  }
+  
+  .splide__arrow svg {
+    fill: #ffffff; /* Color the arrow icon */
+    width: 18px;
+    height: 18px;
+  }
+  
