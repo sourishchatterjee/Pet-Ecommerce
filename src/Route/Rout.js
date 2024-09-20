@@ -413,23 +413,6 @@ function Rout() {
     return token ? children : <Navigate to="/login" />;
   }
 
-//   const spin = keyframes`
-//   0% {
-//     transform: rotate(0deg);
-//   }
-//   100% {
-//     transform: rotate(360deg);
-//   }
-// `;
-
-// const Spinner = styled.div`
-//   border: 4px solid rgba(0, 0, 0, 0.1);
-//   border-left: 4px solid #3498db;
-//   border-radius: 50%;
-//   width: 50px;
-//   height: 50px;
-//   animation: ${spin} 1s linear infinite;
-// `;
 
 
   return (
@@ -444,7 +427,7 @@ function Rout() {
           <Route path="/register" element={<Register />} />
           
           {/* Private Routes */}
-          <Route path="/" element={<PrivateRoute><Home /></PrivateRoute>} />
+          <Route path="/" element={<PrivateRoute> <Home /></PrivateRoute>} />
           <Route path="/addproduct" element={<PrivateRoute><AddProduct /></PrivateRoute>} />
           <Route path="/allProducts" element={<PrivateRoute><AllProducts /></PrivateRoute>} />
           <Route path="/edit/:id" element={<PrivateRoute><EditProduct /></PrivateRoute>} />
