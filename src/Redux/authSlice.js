@@ -143,7 +143,7 @@ export const login = createAsyncThunk(
     try {
       const response = await axiosInstance.post("/user/signin", formData);
 
-      // Check if the status code is 200
+      
       if (response.status === 200) {
         return response.data;
       } else {
@@ -221,7 +221,7 @@ export const authenticationSlice = createSlice({
       .addCase(fetchUserDetails.pending, (state) => {
         state.upload = "loading";
       })
-      .addCase(fetchUserDetails.fulfilled, (state, { payload }) => {
+      .addCase(fetchUserDetails.fulfilled, (state, { payload})=> {
         state.upload = "success";
         state.userDetails = payload?.data;
       })

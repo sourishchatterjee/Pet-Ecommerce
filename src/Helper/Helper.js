@@ -9,11 +9,12 @@ if (process.env?.REACT_APP_ENV === "production") {
 export const baseURL = adminUrl;
 
 let axiosInstance = axios.create({ 
-    baseURL, //We will only work with the endpoint of the api with the instance.
+    baseURL, 
+//We will only work with the endpoint of the api with the instance.
   });
 
 
-  const profilePicBaseUrl = 'https://wtsacademy.dedicateddevelopers.us/uploads/user/profile_pic/';
+  const profilePicBaseUrl ='https://wtsacademy.dedicateddevelopers.us/uploads/user/profile_pic/';
 
   export const profile_Url = (media) => {
     if (!media) {

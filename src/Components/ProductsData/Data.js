@@ -18,7 +18,7 @@
         {
             id:"3",
             name:"Drools Adult Wet Dog Food, Real Chicken and Chicken Liver Chunks in Gravy 0.9Kg (150g x6) Pack of 6",
-             price: 2000,
+             price: 200,
              image:"https://m.media-amazon.com/images/I/61jUn6ALOfL._AC_UL480_FMwebp_QL65_.jpg"
         },
         {
@@ -68,7 +68,7 @@ export const datatwo={
         {
             id:"1",
             name:"Drools Adult Wet Dog Food, Real Chicken and Chicken Liver Chunks in Gravy 0.9Kg (150g x6)",
-             price: 2000,
+             price: 199,
              image:"https://m.media-amazon.com/images/I/71C2p39WasL._AC_UL480_FMwebp_QL65_.jpg"
         },
         {

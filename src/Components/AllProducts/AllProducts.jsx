@@ -240,6 +240,7 @@ function AllProducts() {
   const handlePageChange = (event, pageNumber) => {
     setCurrentPage(pageNumber);
   };
+  
 
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);

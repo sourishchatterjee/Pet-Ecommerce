@@ -15,6 +15,20 @@ const ContactUs = () => {
     return () => clearInterval(timer);
   }, [fullText]);
 
+
+
+//   const fullText = 'contact-us';
+// const [index, setIndex] = useState(0);
+
+// useEffect(() => {
+//   const timer = setInterval(() => {
+//     setIndex((index + 1) % (fullText.length + 1)); // Increment index and loop back
+//   }, 450); // Speed of animation
+
+//   return () => clearInterval(timer); // Cleanup timer
+// }, [index]);
+
+
   return (
     <div className="contact-us-container">
 

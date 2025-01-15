@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
- import './Carousel.css';
+import './Carousel.css';
 
 
 import SubNavbar from '../SubNavbar/SubNavbar';
@@ -16,6 +16,9 @@ import { useState } from 'react';
 import NewProducts from '../NewProducts/NewProducts';
 //import InstagramCard from '../InstagramCard/InstagramCard';
 import { useEffect } from 'react';
+
+
+
 
 const brands = [
   {
@@ -137,46 +140,14 @@ const brands2 = [
 
 
 
-// const items = [
-//   {
-//     title: 'John Doe',
-//     description: 'Great service, my pet loved the care provided!',
-//     image: 'https://media.istockphoto.com/id/1474004422/photo/portrait-of-happy-young-woman-showing-thumb-up-stock-photo.webp?b=1&s=612x612&w=0&k=20&c=CDEyFjmsE8G8ZoGY5za868HYqm6KkCyjJfWKHm07GDs='
-//   },
-//   {
-//     title: 'Jane Smith',
-//     description: 'Very professional and caring staff. Highly recommended!',
-//     image: 'https://media.istockphoto.com/id/1740247084/photo/closeup-shot-of-a-woman-painting-tiranga-on-her-face-with-a-wide-smile-patriotism-cricket-fan.webp?b=1&s=612x612&w=0&k=20&c=K_b4trZVKcbdkeTcoO8hD-QN48zT5iD03-jaGAXTG2o='
-//   },
-//   {
-//     title: 'Mike Johnson',
-//     description: 'Affordable prices and excellent service. Will visit again!',
-//     image: 'https://images.unsplash.com/photo-1588979355313-6711a095465f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHBlb3BsZSUyMHBob3RvfGVufDB8fDB8fHww'
-//   },
-//   {
-//     title: 'Jane Smith',
-//     description: 'Very professional and caring staff. Highly recommended!',
-//     image: 'https://images.unsplash.com/photo-1641466578751-46bfd407146a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGVvcGxlJTIwcGhvdG98ZW58MHx8MHx8fDA%3D'
-//   },
-//   {
-//     title: 'Jasmin Mandal',
-//     description: 'Very professional and caring staff. Highly recommended!',
-//     image: "https://media.istockphoto.com/id/1690958973/photo/smiling-woman-taking-care-of-fresh-plants-in-balcony.webp?b=1&s=612x612&w=0&k=20&c=dLT-BjvZPqHG_zK89pzVEA-Bbn5xdYZrUK7hwnikKyY="
-//   },
-// ];
-
-
 
 function Home() {
-  //const { productItems } = data;
-  // const [cartItems, setCartItems] = useState([]);
+ 
 
-//new product
+const[products,setProducts]=useState(data1.productItems)
 
-const[products]=useState(data1.productItems)
-
-const[products2]=useState(producturl.productItems)
-const[products3]=useState(datatwo.productItems)
+const[products2,setProducts2]=useState(producturl.productItems)
+const[products3,setProducts3]=useState(datatwo.productItems)
 
   const settings = {
     dots: false,
@@ -242,16 +213,22 @@ const[products3]=useState(datatwo.productItems)
       </div>
     </div>
 
+
+
       <div className="carousel-container3" style={{ position: 'relative' }}>
         <Slider {...settings}>
           <div className="carousel-slide">
             <div className="image-wrapper">
-              <img src="./image1.png" alt="Royal Canin Products" className="carousel-image" />
+              <img src="./image1.png" 
+              alt="Royal Canin Products" 
+              className="carousel-image" />
             </div>
           </div>
           <div className="carousel-slide">
             <div className="image-wrapper">
-              <img src="./image4.png" alt="Another Slide" className="carousel-image" />
+              <img src="./image4.png" 
+              alt="Another Slide" 
+              className="carousel-image" />
             </div>
           </div>
           <div className="carousel-slide">
@@ -294,7 +271,7 @@ const[products3]=useState(datatwo.productItems)
         <div className="banner-content">
           <h1>Welcome to Our Shop</h1>
           <p>Discover the best products for your pets</p>
-          <a href="/shop" className="btn btn-primary">Shop Now</a>
+          <button  className="btn btn-primary">Shop Now</button>
         </div>
       </section>
 
@@ -317,18 +294,11 @@ const[products3]=useState(datatwo.productItems)
         </Slider>
       </div>
 
-{/* ///       */}
 
-{/* <div className="heading text">
-      <h2 className="typing-animation1">
-        {fullText.slice(0, index)}
-        <span className="cursor">|</span>
-      </h2>
-    </div> */}
 
 <div className="popular-products-header centered-text">
-  <h2 className="popular-products-title">Popular Products</h2>
-  <p className="popular-products-subtitle">Trusted by All Pets</p>
+  <h2 className="popular-products-title">Most Loved Products</h2>
+  <p className="popular-products-subtitle">Loved by Pets, Approved by Owners</p>
   <p className="popular-products-space">&nbsp;</p>
 </div>
 
@@ -377,6 +347,8 @@ const[products3]=useState(datatwo.productItems)
 </div>
 
 
+{/* product section  that can added to cart  */}
+
 <div className='today-products'>
 {
   products3.map(p=>
@@ -420,7 +392,7 @@ const[products3]=useState(datatwo.productItems)
                   <h2>Product Name</h2>
                   <p>Short description of the product goes here. Highlight key features or benefits.</p>
                   <p><strong>Price:</strong> ₹99.99</p>
-                  <a href="/product-page" className="modern-btn modern-btn-primary">Buy Now</a>
+                  <a  className="modern-btn modern-btn-primary">Buy Now</a>
                 </div>
               </div>
             </div>
@@ -561,7 +533,7 @@ const[products3]=useState(datatwo.productItems)
                   <h2>Product Name</h2>
                   <p>Short description of the product goes here. Highlight key features or benefits.</p>
                   <p><strong>Price:</strong> ₹9900</p>
-                  <a href="/product-page" className="modern-btn modern-btn-primary">Buy Now</a>
+                  <a  className="modern-btn modern-btn-primary">Buy Now</a>
                 </div>
               </div>
             </div>
